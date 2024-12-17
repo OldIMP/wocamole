@@ -1,0 +1,14 @@
+// Ein paar hilfreiche Konstanten für das KomsoBits Board
+
+#ifndef KOSMOBITS_PINS_H
+#define KOSMOBITS_PINS_H
+
+#define KOSMOBITS_SENSOR_PIN A1
+#define KOSMOBITS_ENCODER_1_PIN 2
+#define KOSMOBITS_ENCODER_2_PIN 3
+#define KOSMOBITS_NEOPIXEL_PIN 5
+#define KOSMOBITS_TASTE_1_PIN 8
+#define KOSMOBITS_TASTE_2_PIN 7
+#define KOSMOBITS_BUZZER_PIN 12
+
+#endif // KOSMOBITS_PINS_H

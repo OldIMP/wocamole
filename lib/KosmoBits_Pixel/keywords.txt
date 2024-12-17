@@ -1,0 +1,2 @@
+KosmoBits_Pixel	KEYWORD1
+setColor	KEYWORD2

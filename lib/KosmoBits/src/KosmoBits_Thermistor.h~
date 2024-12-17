@@ -1,0 +1,18 @@
+#ifndef KOSMOBITS_THERMISTOR
+#define KOSMOBITS_THERMISTOR
+
+const float thermistor_messwert_in_celsius(int messwert) {
+  const int R1 = 10000;
+  const int B = 3950;
+  const float T0 = 273.15; // 0° Celsius in Kelvin
+  const float T25 = 25 + T0; // 25° Celsius in Kelvin
+  const int R25 = 5000;
+
+  float Rt = 1023.f * R1 / messwert - R1; // Thermistor-Widerstand
+  float temperatur = 1.f / T25 + 1.f / B  * log(Rt/R25); // Kehrwert der Temperatur
+                                                         // in Kelvin
+  temperatur = 1.0 / temperatur - T0; // Celsius
+  return temperatur;
+}
+
+#endif
